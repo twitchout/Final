@@ -1,0 +1,270 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: red; /* Red */
+    color: white; /* White text */
+}
+
+/* Light Theme */
+body.light-theme {
+    background-color: #ffcccc; /* Light Red */
+    color: #333;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background-color: black; /* Black */
+    color: white; /* White text */
+}
+
+header.dark-theme, footer.dark-theme {
+    background-color: grey; /* Grey */
+}
+
+/* Center Align Section Text */
+section {
+    text-align: center;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: maroon;
+    color: white;
+    padding: 10px 0;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 24px;
+}
+
+/* Navigation */
+.nav {
+    display: none;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav ul li {
+    margin: 10px 0;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+/* Autosize Images */ 
+.img-autosize { 
+        width: 25%; 
+        height: 25%;
+}
+/* Banner */ 
+.banner img { 
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    margin-bottom: 20px; 
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav {
+        display: block;
+    }
+
+    .nav ul {
+        display: flex;
+    }
+
+    .nav ul li {
+        margin: 0 10px;
+    }
+}
+
+/* Mobile Styles */
+.menu-toggle {
+    display: inline-block;
+    background: maroon;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: maroon;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: bottom;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Theme Switcher Button */
+.theme-switcher {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #333; /* Original Dark Color */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Grid Layout for Games Page */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.grid-item:hover {
+    background-color: #555;
+}
+
+/* Desktop Grid Layout */
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Large Screen Grid Layout */
+@media (min-width: 1024px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+
+/*styles for the fourth page involving bootstrap, KEEP seperate from other styles
+"custom styles" */
+/* Custom Styles */
+.bg-maroon {
+    background-color: maroon;
+}
+
+.text-white {
+    color: white;
+}
+
+.btn-maroon {
+    background-color: maroon;
+    color: white;
+    border: none;
+}
+
+.btn-maroon:hover {
+    background-color: darkred;
+    color: white;
+}
+
+.card {
+    background-color: rgba(51, 51, 51, 0.8); /* Dark Grey with 80% opacity */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+.nav .nav-link {
+    color: white;
+}
+
+.nav .nav-link:hover {
+    color: lightgray;
+}
+
+.img-fluid {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Custom Styles for Projects Page */
+.projects-img {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.projects-video {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Autosize Images */
+.img-autosize {
+    width: 100%;
+    height: auto;
+}
+
+/* Banner */
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Flexbox Layout for Sections */
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-item {
+    flex: 1;
+    margin: 10px;
+}
+
+.flex-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
